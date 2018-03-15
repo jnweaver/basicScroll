@@ -142,7 +142,10 @@ const relativeToAbsoluteValue = function(value, elem, scrollTop = getScrollTop()
 
 	if (viewportAnchor==='top') y -= 0
 	if (viewportAnchor==='middle') y -= viewportHeight / 2
+	if (viewportAnchor==='twentypercent') y -= viewportHeight / 5
+	if (viewportAnchor==='elevenpercent') y -= viewportHeight / 9
 	if (viewportAnchor==='bottom') y -= viewportHeight
+
 
 	if (elemAnchor==='top') y += (elemSize.top + scrollTop)
 	if (elemAnchor==='middle') y += (elemSize.top + scrollTop) + elemSize.height / 2
